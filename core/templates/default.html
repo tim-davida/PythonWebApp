@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Заголовок и описание страницы -->
+		<title>Тестовое задание</title>
+		<meta name="description" content="Bla-bla-bla.." />
+		
+		<!-- Иконка -->
+		<link href="./assets/img/favicon.png" rel="icon" type="image/png" />
+		
+		<!-- Стили Bootstrap -->
+		<link href="./assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+		<link href="./assets/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			.navbar {
+				margin: 0 !important;
+				border-radius: 0 !important;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- Модальное окно диалога -->
+		<div id="AddHardwareDialog" class="modal fade" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Добавление нового оборудования</h4>
+					</div>
+					<div class="modal-body">
+						<!-- Область вывода уведомлений -->
+						<div id="ModalAlerts"></div>
+						<form id="ModalForm" name="ModalForm" method="POST">
+							<div class="form-group">
+								<label class="form-control-label">Тип оборудования</label>
+								<select id="hw-type" name="hw-type" size="8" class="form-control selectpicker" data-live-search="true">
+								</select>
+							</div>
+							<div class="form-group">
+								<label class="form-control-label">Серийный номер оборудования</label>
+								<input id="hw-serial-number" name="hw-serial-number" type="text" class="form-control" placeholder="S/N">
+								<hr>
+								<p>Маска серийного номера - "<strong id="hw-sn-mask">aZZNaZAaXaZNAXXA</strong>", где:</p>
+								<ul>
+									<li>N – цифра от 0 до 9;</li>
+									<li>A – прописная буква латинского алфавита;</li>
+									<li>a – строчная буква латинского алфавита;</li>
+									<li>X – прописная буква латинского алфавита либо цифра от 0 до 9;</li>
+									<li>Z –символ из списка: “-“, “_”, “@”.</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Отмена</button>
+						<button id="ModalFormSubmit" type="submit" form="ModalForm" class="btn btn-primary btn-sm">Добавить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Панель навигации -->
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Тестовое задание</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Содержимое страницы -->
+		<div class="container">
+			<h2>Учёт оборудования</h2>
+			
+			<!-- Кнопка добавления новой записи -->
+			<button class="btn btn-primary" data-toggle="modal" data-target="#AddHardwareDialog">Добавить оборудование</button>
+
+			<hr>
+			
+			<!-- Область вывода уведомлений -->
+			<div id="PageAlerts"></div>
+			
+			<!-- Таблица с оборудованием -->
+			<table id="HardwareList" class="table table-bordered table-condensed">
+				<thead>
+					<tr><th>ИД</th><th>Тип</th><th>Серийный номер</th></tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		
+		<!-- Пустой отступ -->
+		<div style="height: 100px;"></div>
+		
+		<!-- Подвал -->
+		<footer>
+			<div class="container text-center">
+				<p>Копирайт &copy; 2020 все права не защитить.</p>
+			</div>
+		</footer>
+		
+		<!-- jQuery, Bootstrap и Axios библиотеки -->
+		<script src="./assets/js/jquery-3.5.1.js" type="text/javascript"></script>
+		<script src="./assets/js/bootstrap.js" type="text/javascript"></script>
+		<script src="./assets/js/bootstrap-select.js" type="text/javascript"></script>
+		<script src="./assets/js/axios-0.20.0.js" type="text/javascript"></script>
+		
+		<!-- Мой JS код -->
+		<script src="./assets/js/MyApp.js" type="text/javascript"></script>
+	</body>
+</html>

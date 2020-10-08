@@ -1,0 +1,21 @@
+2020-10-05T17:05:41.583232Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2020-10-05T17:05:41.583313Z 0 [System] [MY-010116] [Server] C:\_MOE\Workspace\Python\PythonWebApp\core\mysql\bin\mysqld.exe (mysqld 8.0.21) starting as process 1924
+2020-10-05T17:05:41.600227Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-10-05T17:05:41.907424Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-10-05T17:05:42.043532Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2020-10-05T17:05:42.158855Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-10-05T17:05:42.159541Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2020-10-05T17:05:42.195924Z 0 [System] [MY-010931] [Server] C:\_MOE\Workspace\Python\PythonWebApp\core\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.21'  socket: ''  port: 55555  MySQL Community Server - GPL.
+2020-10-05T17:06:57.989252Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2020-10-05T17:06:57.989339Z 0 [System] [MY-010116] [Server] C:\_MOE\Workspace\Python\PythonWebApp\core\mysql\bin\mysqld.exe (mysqld 8.0.21) starting as process 13304
+2020-10-05T17:06:58.001883Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-10-05T17:06:58.444178Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-10-05T17:06:58.580275Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2020-10-05T17:06:58.600744Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-10-05T17:06:58.609084Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-10-05T17:06:58.660795Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-10-05T17:06:58.661384Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2020-10-05T17:06:58.694953Z 0 [System] [MY-010931] [Server] C:\_MOE\Workspace\Python\PythonWebApp\core\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.21'  socket: ''  port: 55555  MySQL Community Server - GPL.
+2020-10-05T17:07:02.224905Z 8 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.21).
+2020-10-05T17:07:02.225418Z 0 [System] [MY-013105] [Server] C:\_MOE\Workspace\Python\PythonWebApp\core\mysql\bin\mysqld.exe: Normal shutdown.
+2020-10-05T17:07:02.703690Z 0 [System] [MY-010910] [Server] C:\_MOE\Workspace\Python\PythonWebApp\core\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.21)  MySQL Community Server - GPL.

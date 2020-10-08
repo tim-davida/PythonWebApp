@@ -1,0 +1,7 @@
+.\DLLs
+.\Lib
+.\Lib\site-packages
+.\Scripts
+
+# Uncomment to run site.main() automatically
+#import site
